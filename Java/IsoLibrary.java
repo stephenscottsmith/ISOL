@@ -9,16 +9,14 @@ import java.io.IOException;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Document;
+import org.jsoup.Jsoup;
 
 public class IsoLibrary {
 	private File library;
 	private File posters;
 	private String[] movieTitles;
-
-
 
 	public static void main(String[] args) {
 
@@ -28,12 +26,15 @@ public class IsoLibrary {
 		try {
 			isol = new IsoLibrary(args[0]);
 		} catch (Exception e) {
-			e.printStackTrace();
+			System.out.println("You did not input a custom iso library directory, so I will use the default: " + defaultDirectoryPath);	
 		}
 
 		isol = new IsoLibrary(defaultDirectoryPath);
 		String [] titles = isol.getMovieTitles();
+		long startTime = System.currentTimeMillis();
 		isol.downloadPosters();
+		System.out.println("Finished downloading posters in: " + (((System.currentTimeMillis() - startTime) / 1000) / 60) + 
+						   " minutes and " + (((System.currentTimeMillis() - startTime) / 1000) % 60) + " seconds."); 
 
 		System.out.println("NUMBER OF MOVIES: " + titles.length);
 	}
@@ -51,25 +52,39 @@ public class IsoLibrary {
 		return this.movieTitles;
 	}
 
-	private String constructTitle(String isoTitle) {
-		isoTitle = isoTitle.substring(0, isoTitle.lastIndexOf(".iso"));
-
-		return isoTitle;
-	}
-
 	public void downloadPosters() {
 		this.createPostersDirectory();
 		// iterate over each file string with global string without .iso
-
+		String previousTitle = "";
 		for (String isoTitle : this.movieTitles) {
-			String title = this.constructTitle(isoTitle);
-
-			try {
-				this.downloadPoster(title, this.getPosterDownloadLink(this.getIMDBMovieId(title)));
-			} catch (Exception e) {
-				e.printStackTrace();
+			String title = this.constructSearchTitle(isoTitle);
+			if (!title.equals(previousTitle)) {
+				try {
+					this.downloadPoster(title, this.getPosterDownloadLink(this.getIMDBMovieId(title)));
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 			}
+			previousTitle = title;	
 		}
+	}
+
+	private String constructSearchTitle(String isoTitle) {
+		int isoIndex = isoTitle.lastIndexOf(".iso"),
+			seasonIndex = isoTitle.indexOf("Season"),
+			volumeIndex = isoTitle.indexOf("Volume");
+
+		if (seasonIndex > -1) {
+			return isoTitle.substring(0, seasonIndex);
+		} 
+
+		if (volumeIndex > -1) {
+			return isoTitle.substring(0, volumeIndex);
+		} 
+
+		int discIndex = isoTitle.indexOf("Disc"); 
+
+		return isoTitle.substring(0, (discIndex > -1) ? discIndex : isoIndex);
 	}
 
 	public void downloadPoster(String title, String downloadPosterLink) {
@@ -77,6 +92,7 @@ public class IsoLibrary {
 
 		try {
 			// Code to download
+			System.out.println(downloadPosterLink);
 			URL link = new URL(downloadPosterLink); //The file that you want to download
 			InputStream in = new BufferedInputStream(link.openStream());
 			ByteArrayOutputStream out = new ByteArrayOutputStream();
@@ -97,12 +113,12 @@ public class IsoLibrary {
 			fos.close();
 
 		} catch (Exception e) {	 
-
+			e.printStackTrace();
 		}
 	}
 
 	// Might consider getting posters from a google - wikipedia search
-	public String getIMDBMovieId(String title) {
+	private String getIMDBMovieId(String title) {
 		Element element = null;
 
 		try {
@@ -125,12 +141,12 @@ public class IsoLibrary {
 		return m.group();
 	}
 
-	public String getPosterDownloadLink(String imdbId) {
+	private String getPosterDownloadLink(String imdbId) {
 		Element element = null;
 
 		try {
 			Document doc = Jsoup.connect("http://www.imdb.com" + imdbId).get();
-			element = doc.select("table#title-overview-widget-layout tbody td div a img").first(); // needs higher specificity for being in titles group
+			element = doc.select("table#title-overview-widget-layout tbody td div a img").first(); // needs higher specificity for being in titles group 
 			System.out.println(imdbId);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -151,7 +167,7 @@ public class IsoLibrary {
 		        this.posters.mkdir();
 		        result = true;
 		    } catch (SecurityException se){
-		        //handle it
+		        se.printStackTrace();
 		    }  
 
 		    if (result) {    
