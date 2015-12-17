@@ -1,0 +1,11 @@
+package io.isol.ws.service;
+
+import java.util.Collection;
+
+import io.isol.Title;
+
+public interface TitleService {
+	Collection<Title> findAll();
+	
+	Title downloadTitle(String title);
+}

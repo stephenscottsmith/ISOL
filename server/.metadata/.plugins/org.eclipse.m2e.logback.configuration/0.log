@@ -1,0 +1,622 @@
+2015-12-17 12:22:01,659 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.isol:isol-web-services:1.0-SNAPSHOT @ /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml.
+2015-12-17 12:22:02,099 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /isol-web-services/src/main/java
+2015-12-17 12:22:02,099 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /isol-web-services/src/test/java
+2015-12-17 12:22:02,178 [Worker-0] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2015-12-17 12:22:02,819 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-17 12:22:02,821 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/main/resources
+2015-12-17 12:22:02,822 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-17 12:22:02,823 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 12:25:45,913 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-start-parent/1.3.1.RELEASE/spring-boot-start-parent-1.3.1.RELEASE.pom
+2015-12-17 12:25:45,920 [Worker-10] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Could not find artifact org.springframework.boot:spring-boot-start-parent:pom:1.3.1.RELEASE in central (https://repo.maven.apache.org/maven2) and 'parent.relativePath' points at wrong local POM @ line 13, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Could not find artifact org.springframework.boot:spring-boot-start-parent:pom:1.3.1.RELEASE in central (https://repo.maven.apache.org/maven2) and 'parent.relativePath' points at wrong local POM @ line 13, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:729) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1050) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Could not find artifact org.springframework.boot:spring-boot-start-parent:pom:1.3.1.RELEASE in central (https://repo.maven.apache.org/maven2) and 'parent.relativePath' points at wrong local POM @ line 13, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1007) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:796) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:325) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.3.jar:3.3.3]
+	... 15 common frames omitted
+2015-12-17 12:25:54,878 [Worker-14] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-start-parent/1.2.1.RELEASE/spring-boot-start-parent-1.2.1.RELEASE.pom
+2015-12-17 12:25:54,879 [Worker-14] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Could not find artifact org.springframework.boot:spring-boot-start-parent:pom:1.2.1.RELEASE in central (https://repo.maven.apache.org/maven2) and 'parent.relativePath' points at wrong local POM @ line 13, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Could not find artifact org.springframework.boot:spring-boot-start-parent:pom:1.2.1.RELEASE in central (https://repo.maven.apache.org/maven2) and 'parent.relativePath' points at wrong local POM @ line 13, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:729) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1050) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Could not find artifact org.springframework.boot:spring-boot-start-parent:pom:1.2.1.RELEASE in central (https://repo.maven.apache.org/maven2) and 'parent.relativePath' points at wrong local POM @ line 13, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1007) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:796) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:325) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.3.jar:3.3.3]
+	... 15 common frames omitted
+2015-12-17 12:26:11,470 [Worker-11] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 13, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 13, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:729) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1050) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 13, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1007) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:796) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:325) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.3.jar:3.3.3]
+	... 15 common frames omitted
+2015-12-17 12:26:59,484 [Worker-12] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 13, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 13, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:729) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1050) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 13, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1007) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:796) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:325) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.3.jar:3.3.3]
+	... 15 common frames omitted
+2015-12-17 12:27:55,579 [Worker-8] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 13, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 13, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:729) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1050) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 13, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1007) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:796) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:325) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.3.jar:3.3.3]
+	... 15 common frames omitted
+2015-12-17 12:29:03,024 [Worker-11] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 10, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 10, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:729) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1050) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 10, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1007) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:796) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:325) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.3.jar:3.3.3]
+	... 15 common frames omitted
+2015-12-17 12:29:24,600 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-start-parent/1.3.2.RELEASE/spring-boot-start-parent-1.3.2.RELEASE.pom
+2015-12-17 12:29:24,602 [Worker-11] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Could not find artifact org.springframework.boot:spring-boot-start-parent:pom:1.3.2.RELEASE in central (https://repo.maven.apache.org/maven2) and 'parent.relativePath' points at wrong local POM @ line 10, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Could not find artifact org.springframework.boot:spring-boot-start-parent:pom:1.3.2.RELEASE in central (https://repo.maven.apache.org/maven2) and 'parent.relativePath' points at wrong local POM @ line 10, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:729) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1050) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Could not find artifact org.springframework.boot:spring-boot-start-parent:pom:1.3.2.RELEASE in central (https://repo.maven.apache.org/maven2) and 'parent.relativePath' points at wrong local POM @ line 10, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1007) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:796) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:325) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.3.jar:3.3.3]
+	... 15 common frames omitted
+2015-12-17 12:29:27,984 [Worker-15] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.1.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 10, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.1.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 10, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:729) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1050) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.1.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 10, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1007) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:796) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:325) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.3.jar:3.3.3]
+	... 15 common frames omitted
+2015-12-17 12:29:30,350 [Worker-13] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 10, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 10, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:729) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1050) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 10, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1007) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:796) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:325) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.3.jar:3.3.3]
+	... 15 common frames omitted
+2015-12-17 12:30:46,278 [Worker-15] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 5, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 5, column 11
+ for project io.isol:isol-web-services:1.0-SNAPSHOT at /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:729) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1050) [org.eclipse.m2e.editor_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for io.isol:isol-web-services:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for io.isol:isol-web-services:1.0-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-start-parent:pom:1.3.0.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 5, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1007) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:796) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:325) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.3.jar:3.3.3]
+	... 15 common frames omitted
+2015-12-17 12:32:46,255 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.isol:isol-web-services:0.0.1-SNAPSHOT @ /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml.
+2015-12-17 12:32:46,728 [Worker-8] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-hateoas/1.3.0.RELEASE/spring-boot-starter-hateoas-1.3.0.RELEASE.pom
+2015-12-17 12:32:46,756 [Worker-8] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-hateoas/1.3.0.RELEASE/spring-boot-starter-hateoas-1.3.0.RELEASE.pom
+2015-12-17 12:32:46,786 [Worker-8] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/postgresql/postgresql/9.4-1205-jdbc41/postgresql-9.4-1205-jdbc41.pom
+2015-12-17 12:32:46,811 [Worker-8] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/postgresql/postgresql/9.4-1205-jdbc41/postgresql-9.4-1205-jdbc41.pom
+2015-12-17 12:32:46,937 [Worker-8] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-hateoas/1.3.0.RELEASE/spring-boot-starter-hateoas-1.3.0.RELEASE.jar
+2015-12-17 12:32:46,962 [Worker-8] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-hateoas/1.3.0.RELEASE/spring-boot-starter-hateoas-1.3.0.RELEASE.jar
+2015-12-17 12:32:47,015 [Worker-8] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/postgresql/postgresql/9.4-1205-jdbc41/postgresql-9.4-1205-jdbc41.jar
+2015-12-17 12:32:47,340 [Worker-8] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/postgresql/postgresql/9.4-1205-jdbc41/postgresql-9.4-1205-jdbc41.jar
+2015-12-17 12:32:47,810 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /isol-web-services/src/main/java
+2015-12-17 12:32:47,810 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /isol-web-services/src/main/resources
+2015-12-17 12:32:47,813 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /isol-web-services/src/main/resources
+2015-12-17 12:32:47,819 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /isol-web-services/src/test/java
+2015-12-17 12:32:48,078 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 2 sec
+2015-12-17 12:32:48,080 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2015-12-17 12:32:48,335 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.isol:isol-web-services:0.0.1-SNAPSHOT @ /Users/Steve/Git/ISOL/server/isol-web-services/pom.xml.
+2015-12-17 12:32:48,807 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /isol-web-services/src/main/java
+2015-12-17 12:32:48,807 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /isol-web-services/src/main/resources
+2015-12-17 12:32:48,809 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /isol-web-services/src/main/resources
+2015-12-17 12:32:48,811 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /isol-web-services/src/test/java
+2015-12-17 12:32:48,903 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2015-12-17 12:32:49,477 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:32:49,481 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 12:32:49,489 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 12:32:49,491 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:32:49,491 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 12:32:50,618 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:32:50,620 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 12:32:50,620 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 12:32:50,622 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:32:50,622 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 12:40:20,410 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:40:20,412 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 12:40:20,413 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 12:40:20,415 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:40:20,415 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 12:40:27,105 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:40:27,105 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 12:40:27,106 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 12:40:27,107 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:40:27,107 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 12:40:37,267 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:40:37,267 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 12:40:37,268 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 12:40:37,269 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:40:37,269 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 12:47:25,599 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:47:25,600 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 12:47:25,600 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 12:47:25,603 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:47:25,603 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 12:48:21,206 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:48:21,206 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 12:48:21,207 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 12:48:21,208 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:48:21,208 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 12:48:29,819 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:48:29,820 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 12:48:29,821 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 12:48:29,824 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:48:29,824 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 12:48:51,225 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:48:51,226 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 12:48:51,227 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 12:48:51,228 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:48:51,228 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 12:49:34,898 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:49:34,899 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 12:49:34,900 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 12:49:34,901 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:49:34,901 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 12:50:56,378 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:50:56,378 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 12:50:56,379 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 12:50:56,380 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:50:56,380 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 12:51:08,000 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:51:08,000 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 12:51:08,001 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 12:51:08,003 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:51:08,003 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 12:51:39,622 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:51:39,623 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 12:51:39,623 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 12:51:39,624 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:51:39,624 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 12:58:18,584 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:58:18,586 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 12:58:18,586 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 12:58:18,588 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 12:58:18,588 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:02:30,240 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:02:30,242 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:02:30,242 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:02:30,245 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:02:30,245 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:04:29,851 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:04:29,852 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:04:29,852 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:04:29,854 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:04:29,854 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:04:34,035 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:04:34,036 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:04:34,036 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:04:34,037 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:04:34,037 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:07:23,470 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:07:23,472 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:07:23,472 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:07:23,474 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:07:23,474 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:10:31,839 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:10:31,840 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:10:31,841 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:10:31,842 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:10:31,842 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:11:20,268 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:11:20,269 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:11:20,269 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:11:20,271 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:11:20,271 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:11:28,196 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:11:28,197 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:11:28,197 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:11:28,198 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:11:28,198 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:12:32,269 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:12:32,270 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:12:32,271 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:12:32,272 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:12:32,272 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:12:49,180 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:12:49,181 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:12:49,181 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:12:49,182 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:12:49,182 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:14:00,974 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:14:00,975 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:14:00,975 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:14:00,977 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:14:00,977 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:16:19,001 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:16:19,001 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:16:19,002 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:16:19,003 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:16:19,003 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:16:51,488 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:16:51,488 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:16:51,489 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:16:51,490 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:16:51,491 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:16:59,927 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:16:59,928 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:16:59,928 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:16:59,930 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:16:59,930 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:26:30,224 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:26:30,224 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:26:30,225 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:26:30,226 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:26:30,226 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:27:30,026 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:27:30,027 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:27:30,028 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:27:30,029 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:27:30,029 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:27:51,897 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:27:51,898 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:27:51,899 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:27:51,900 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:27:51,900 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:28:07,719 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:28:07,722 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:28:07,723 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:28:07,724 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:28:07,725 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:29:33,333 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:29:33,335 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:29:33,336 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:29:33,337 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:29:33,337 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:29:45,633 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:29:45,634 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:29:45,634 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:29:45,635 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:29:45,635 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:32:25,728 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:32:25,732 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:32:25,733 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:32:25,735 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:32:25,735 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:33:54,781 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:33:54,782 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:33:54,783 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:33:54,784 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:33:54,784 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:38:19,009 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:38:19,009 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:38:19,010 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:38:19,010 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:38:19,011 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:38:23,917 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:38:23,917 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:38:23,918 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:38:23,918 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:38:23,918 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:38:28,129 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:38:28,129 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:38:28,130 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:38:28,130 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:38:28,131 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:38:43,576 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:38:43,577 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:38:43,578 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:38:43,581 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:38:43,581 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:38:52,023 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:38:52,024 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:38:52,024 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:38:52,025 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:38:52,026 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:40:09,344 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:40:09,345 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:40:09,347 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:40:09,349 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:40:09,349 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:40:50,815 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:40:50,816 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:40:50,817 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:40:50,818 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:40:50,818 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:41:05,103 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:41:05,103 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:41:05,104 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:41:05,106 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:41:05,106 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:42:41,587 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:42:41,587 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:42:41,588 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:42:41,590 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:42:41,591 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:43:19,963 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:43:19,963 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:43:19,964 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:43:19,964 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:43:19,965 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:46:21,485 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:46:21,487 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:46:21,489 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:46:21,491 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:46:21,491 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:48:23,549 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:48:23,549 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:48:23,555 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:48:23,556 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:48:23,556 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:49:25,870 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:49:25,873 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:49:25,874 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:49:25,875 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:49:25,875 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:49:29,372 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:49:29,373 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:49:29,373 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:49:29,374 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:49:29,374 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:50:38,384 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:50:38,385 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:50:38,385 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:50:38,386 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:50:38,386 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:52:22,946 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:52:22,947 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:52:22,947 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:52:22,948 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:52:22,948 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:52:34,022 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:52:34,024 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:52:34,029 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:52:34,030 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:52:34,030 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:55:04,622 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:55:04,623 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:55:04,624 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:55:04,624 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:55:04,624 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:56:28,223 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:56:28,223 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:56:28,224 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:56:28,226 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:56:28,226 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:56:35,810 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:56:35,811 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:56:35,811 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:56:35,813 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:56:35,813 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources
+2015-12-17 13:56:55,200 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:56:55,201 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-12-17 13:56:55,201 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-17 13:56:55,203 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-12-17 13:56:55,203 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Steve/Git/ISOL/server/isol-web-services/src/test/resources

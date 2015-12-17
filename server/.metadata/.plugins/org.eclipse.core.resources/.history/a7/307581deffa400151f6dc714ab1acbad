@@ -1,0 +1,5 @@
+package io.isol.ws.web.api;
+
+public class TitlesController {
+
+}

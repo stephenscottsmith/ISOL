@@ -1,0 +1,28 @@
+package io.isol;
+
+import java.math.BigInteger;
+
+public class Titles {
+	private BigInteger id;
+	private String [] titles;
+	
+	public Titles() {
+		
+	}
+
+	public BigInteger getId() {
+		return id;
+	}
+
+	public void setId(BigInteger id) {
+		this.id = id;
+	}
+
+	public String[] getTitles() {
+		return titles;
+	}
+
+	public void setTitles(String[] titles) {
+		this.titles = titles;
+	}
+}

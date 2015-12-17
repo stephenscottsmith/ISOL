@@ -1,0 +1,21 @@
+package io.isol.ws.service;
+
+import java.util.Collection;
+
+import io.isol.Title;
+
+public class TitleServiceBean implements TitleService {
+
+	@Override
+	public Collection<Title> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Title downloadTitle(String title) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,17 @@
+package io.isol.ws.model;
+
+public class Title {
+	private String title;
+	
+	public Title(String title) {
+		this.title = title;
+	}
+
+	public String getTitles() {
+		return title;
+	}
+
+	public void setTitles(String title) {
+		this.title = title;
+	}
+}
