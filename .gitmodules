@@ -1,0 +1,3 @@
+[submodule "mobile/ios/isol-ios-client/SwiftClient"]
+	path = mobile/ios/isol-ios-client/SwiftClient
+	url = https://github.com/theadam/SwiftClient.git

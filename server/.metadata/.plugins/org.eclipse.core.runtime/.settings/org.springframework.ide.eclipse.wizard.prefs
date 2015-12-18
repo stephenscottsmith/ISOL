@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PopularityTracker.data-jpa=1
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PopularityTracker.data-rest=1
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PopularityTracker.hateoas=1
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PopularityTracker.hsql=1
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PopularityTracker.jdbc=1
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PopularityTracker.postgresql=1
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PopularityTracker.web=1

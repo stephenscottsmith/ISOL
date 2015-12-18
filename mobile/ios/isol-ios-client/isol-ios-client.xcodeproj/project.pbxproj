@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FD3A2FAEDEA76744596EA9B /* Pods_isol_ios_client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFC0F4E4348C430AA9274F3 /* Pods_isol_ios_client.framework */; };
+		AA5A076C1C2458C8004D9D5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A076B1C2458C8004D9D5F /* AppDelegate.swift */; };
+		AA5A076E1C2458C8004D9D5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A076D1C2458C8004D9D5F /* ViewController.swift */; };
+		AA5A07711C2458C8004D9D5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5A076F1C2458C8004D9D5F /* Main.storyboard */; };
+		AA5A07731C2458C8004D9D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5A07721C2458C8004D9D5F /* Assets.xcassets */; };
+		AA5A07761C2458C8004D9D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5A07741C2458C8004D9D5F /* LaunchScreen.storyboard */; };
+		AA5A07811C2458C8004D9D5F /* isol_ios_clientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A07801C2458C8004D9D5F /* isol_ios_clientTests.swift */; };
+		AA5A078C1C2458C8004D9D5F /* isol_ios_clientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A078B1C2458C8004D9D5F /* isol_ios_clientUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA5A077D1C2458C8004D9D5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5A07601C2458C8004D9D5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA5A07671C2458C8004D9D5F;
+			remoteInfo = "isol-ios-client";
+		};
+		AA5A07881C2458C8004D9D5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5A07601C2458C8004D9D5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA5A07671C2458C8004D9D5F;
+			remoteInfo = "isol-ios-client";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A7E6A82290A94895F8D1293 /* Pods-isol-ios-client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isol-ios-client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-isol-ios-client/Pods-isol-ios-client.debug.xcconfig"; sourceTree = "<group>"; };
+		4EFC0F4E4348C430AA9274F3 /* Pods_isol_ios_client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_isol_ios_client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF4DF1747C5AD1271CD0544 /* Pods-isol-ios-client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isol-ios-client.release.xcconfig"; path = "Pods/Target Support Files/Pods-isol-ios-client/Pods-isol-ios-client.release.xcconfig"; sourceTree = "<group>"; };
+		AA5A07681C2458C8004D9D5F /* isol-ios-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "isol-ios-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5A076B1C2458C8004D9D5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA5A076D1C2458C8004D9D5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA5A07701C2458C8004D9D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA5A07721C2458C8004D9D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA5A07751C2458C8004D9D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA5A07771C2458C8004D9D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5A077C1C2458C8004D9D5F /* isol-ios-clientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "isol-ios-clientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5A07801C2458C8004D9D5F /* isol_ios_clientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isol_ios_clientTests.swift; sourceTree = "<group>"; };
+		AA5A07821C2458C8004D9D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5A07871C2458C8004D9D5F /* isol-ios-clientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "isol-ios-clientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5A078B1C2458C8004D9D5F /* isol_ios_clientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isol_ios_clientUITests.swift; sourceTree = "<group>"; };
+		AA5A078D1C2458C8004D9D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA5A07651C2458C8004D9D5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD3A2FAEDEA76744596EA9B /* Pods_isol_ios_client.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5A07791C2458C8004D9D5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5A07841C2458C8004D9D5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AFED9F794DFF83EB073F67E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A7E6A82290A94895F8D1293 /* Pods-isol-ios-client.debug.xcconfig */,
+				7FF4DF1747C5AD1271CD0544 /* Pods-isol-ios-client.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA5A075F1C2458C8004D9D5F = {
+			isa = PBXGroup;
+			children = (
+				AA5A076A1C2458C8004D9D5F /* isol-ios-client */,
+				AA5A077F1C2458C8004D9D5F /* isol-ios-clientTests */,
+				AA5A078A1C2458C8004D9D5F /* isol-ios-clientUITests */,
+				AA5A07691C2458C8004D9D5F /* Products */,
+				0AFED9F794DFF83EB073F67E /* Pods */,
+				B0EB7197FB1E343A83BDBA7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA5A07691C2458C8004D9D5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA5A07681C2458C8004D9D5F /* isol-ios-client.app */,
+				AA5A077C1C2458C8004D9D5F /* isol-ios-clientTests.xctest */,
+				AA5A07871C2458C8004D9D5F /* isol-ios-clientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA5A076A1C2458C8004D9D5F /* isol-ios-client */ = {
+			isa = PBXGroup;
+			children = (
+				AA5A076B1C2458C8004D9D5F /* AppDelegate.swift */,
+				AA5A076D1C2458C8004D9D5F /* ViewController.swift */,
+				AA5A076F1C2458C8004D9D5F /* Main.storyboard */,
+				AA5A07721C2458C8004D9D5F /* Assets.xcassets */,
+				AA5A07741C2458C8004D9D5F /* LaunchScreen.storyboard */,
+				AA5A07771C2458C8004D9D5F /* Info.plist */,
+			);
+			path = "isol-ios-client";
+			sourceTree = "<group>";
+		};
+		AA5A077F1C2458C8004D9D5F /* isol-ios-clientTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA5A07801C2458C8004D9D5F /* isol_ios_clientTests.swift */,
+				AA5A07821C2458C8004D9D5F /* Info.plist */,
+			);
+			path = "isol-ios-clientTests";
+			sourceTree = "<group>";
+		};
+		AA5A078A1C2458C8004D9D5F /* isol-ios-clientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA5A078B1C2458C8004D9D5F /* isol_ios_clientUITests.swift */,
+				AA5A078D1C2458C8004D9D5F /* Info.plist */,
+			);
+			path = "isol-ios-clientUITests";
+			sourceTree = "<group>";
+		};
+		B0EB7197FB1E343A83BDBA7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EFC0F4E4348C430AA9274F3 /* Pods_isol_ios_client.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA5A07671C2458C8004D9D5F /* isol-ios-client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5A07901C2458C8004D9D5F /* Build configuration list for PBXNativeTarget "isol-ios-client" */;
+			buildPhases = (
+				9592B60442DBD915AC58AA8E /* Check Pods Manifest.lock */,
+				AA5A07641C2458C8004D9D5F /* Sources */,
+				AA5A07651C2458C8004D9D5F /* Frameworks */,
+				AA5A07661C2458C8004D9D5F /* Resources */,
+				3A1DCFA6BE243CA083FF7785 /* Embed Pods Frameworks */,
+				53387AEF6D73B77A3F0C232E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "isol-ios-client";
+			productName = "isol-ios-client";
+			productReference = AA5A07681C2458C8004D9D5F /* isol-ios-client.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA5A077B1C2458C8004D9D5F /* isol-ios-clientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5A07931C2458C8004D9D5F /* Build configuration list for PBXNativeTarget "isol-ios-clientTests" */;
+			buildPhases = (
+				AA5A07781C2458C8004D9D5F /* Sources */,
+				AA5A07791C2458C8004D9D5F /* Frameworks */,
+				AA5A077A1C2458C8004D9D5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA5A077E1C2458C8004D9D5F /* PBXTargetDependency */,
+			);
+			name = "isol-ios-clientTests";
+			productName = "isol-ios-clientTests";
+			productReference = AA5A077C1C2458C8004D9D5F /* isol-ios-clientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA5A07861C2458C8004D9D5F /* isol-ios-clientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5A07961C2458C8004D9D5F /* Build configuration list for PBXNativeTarget "isol-ios-clientUITests" */;
+			buildPhases = (
+				AA5A07831C2458C8004D9D5F /* Sources */,
+				AA5A07841C2458C8004D9D5F /* Frameworks */,
+				AA5A07851C2458C8004D9D5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA5A07891C2458C8004D9D5F /* PBXTargetDependency */,
+			);
+			name = "isol-ios-clientUITests";
+			productName = "isol-ios-clientUITests";
+			productReference = AA5A07871C2458C8004D9D5F /* isol-ios-clientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA5A07601C2458C8004D9D5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Stephen Smith";
+				TargetAttributes = {
+					AA5A07671C2458C8004D9D5F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					AA5A077B1C2458C8004D9D5F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = AA5A07671C2458C8004D9D5F;
+					};
+					AA5A07861C2458C8004D9D5F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = AA5A07671C2458C8004D9D5F;
+					};
+				};
+			};
+			buildConfigurationList = AA5A07631C2458C8004D9D5F /* Build configuration list for PBXProject "isol-ios-client" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA5A075F1C2458C8004D9D5F;
+			productRefGroup = AA5A07691C2458C8004D9D5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA5A07671C2458C8004D9D5F /* isol-ios-client */,
+				AA5A077B1C2458C8004D9D5F /* isol-ios-clientTests */,
+				AA5A07861C2458C8004D9D5F /* isol-ios-clientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA5A07661C2458C8004D9D5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5A07761C2458C8004D9D5F /* LaunchScreen.storyboard in Resources */,
+				AA5A07731C2458C8004D9D5F /* Assets.xcassets in Resources */,
+				AA5A07711C2458C8004D9D5F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5A077A1C2458C8004D9D5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5A07851C2458C8004D9D5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A1DCFA6BE243CA083FF7785 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-isol-ios-client/Pods-isol-ios-client-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53387AEF6D73B77A3F0C232E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-isol-ios-client/Pods-isol-ios-client-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9592B60442DBD915AC58AA8E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA5A07641C2458C8004D9D5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5A076E1C2458C8004D9D5F /* ViewController.swift in Sources */,
+				AA5A076C1C2458C8004D9D5F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5A07781C2458C8004D9D5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5A07811C2458C8004D9D5F /* isol_ios_clientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5A07831C2458C8004D9D5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5A078C1C2458C8004D9D5F /* isol_ios_clientUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA5A077E1C2458C8004D9D5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA5A07671C2458C8004D9D5F /* isol-ios-client */;
+			targetProxy = AA5A077D1C2458C8004D9D5F /* PBXContainerItemProxy */;
+		};
+		AA5A07891C2458C8004D9D5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA5A07671C2458C8004D9D5F /* isol-ios-client */;
+			targetProxy = AA5A07881C2458C8004D9D5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA5A076F1C2458C8004D9D5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA5A07701C2458C8004D9D5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA5A07741C2458C8004D9D5F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA5A07751C2458C8004D9D5F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA5A078E1C2458C8004D9D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA5A078F1C2458C8004D9D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA5A07911C2458C8004D9D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A7E6A82290A94895F8D1293 /* Pods-isol-ios-client.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "isol-ios-client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.isol.isol-ios-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA5A07921C2458C8004D9D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FF4DF1747C5AD1271CD0544 /* Pods-isol-ios-client.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "isol-ios-client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.isol.isol-ios-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AA5A07941C2458C8004D9D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "isol-ios-clientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.isol.isol-ios-clientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/isol-ios-client.app/isol-ios-client";
+			};
+			name = Debug;
+		};
+		AA5A07951C2458C8004D9D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "isol-ios-clientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.isol.isol-ios-clientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/isol-ios-client.app/isol-ios-client";
+			};
+			name = Release;
+		};
+		AA5A07971C2458C8004D9D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "isol-ios-clientUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.isol.isol-ios-clientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "isol-ios-client";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AA5A07981C2458C8004D9D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "isol-ios-clientUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.isol.isol-ios-clientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "isol-ios-client";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA5A07631C2458C8004D9D5F /* Build configuration list for PBXProject "isol-ios-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5A078E1C2458C8004D9D5F /* Debug */,
+				AA5A078F1C2458C8004D9D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA5A07901C2458C8004D9D5F /* Build configuration list for PBXNativeTarget "isol-ios-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5A07911C2458C8004D9D5F /* Debug */,
+				AA5A07921C2458C8004D9D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA5A07931C2458C8004D9D5F /* Build configuration list for PBXNativeTarget "isol-ios-clientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5A07941C2458C8004D9D5F /* Debug */,
+				AA5A07951C2458C8004D9D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA5A07961C2458C8004D9D5F /* Build configuration list for PBXNativeTarget "isol-ios-clientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5A07971C2458C8004D9D5F /* Debug */,
+				AA5A07981C2458C8004D9D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA5A07601C2458C8004D9D5F /* Project object */;
+}
